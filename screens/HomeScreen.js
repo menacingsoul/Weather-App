@@ -47,7 +47,7 @@ export default function HomeScreen() {
 
   const fetchMyWeatherData = async ()=>{
     let myCity = await getData('city');
-    let cityName = 'Islamabad';
+    let cityName = 'New Delhi';
     if(myCity){
       cityName = myCity;
     }
@@ -145,7 +145,7 @@ export default function HomeScreen() {
                 <View className="flex-row justify-center">
                   <Image 
                     // source={{uri: 'https:'+current?.condition?.icon}} 
-                    source={weatherImages[current?.condition?.text || 'other']} 
+                    source={weatherImages[current?.condition?.text || 'Sunny']} 
                     className="w-52 h-52" />
                   
                 </View>
